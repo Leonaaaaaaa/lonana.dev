@@ -1,43 +1,45 @@
-:root {
-    --text: #090b10;
-    --background: #f4f5f9;
-    --primary: #6c7aaa;
-    --secondary: #c79ebf;
-    --accent: #b98696;
+:root[data-theme="light"] {
+  --text: #090b10;
+  --background: #f5f6fa;
+  --primary: #6d7cab;
+  --secondary: #c79ebf;
+  --accent: #ba8797;
+}
+:root[data-theme="dark"] {
+  --text: #eff1f6;
+  --background: #05060a;
+  --primary: #546292;
+  --secondary: #613859;
+  --accent: #784555;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text);
-    background-color: var(--background);
-    overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background-color: var(--background);
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    transform: translateY(-150px);
-    font-size: larger;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: var(--primary); */
+  width: 500px;
 }
 
-a {
-    color: var(--primary);
-    font-size: larger;
-    transition: all 250ms;
+.svg-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+
+  transition: all 1s;
 }
 
-a:hover {
-    color: var(--accent);
-    text-decoration: underline;
-    transform: translateY(-2px);
-}
-
-#yapona {
-    width: 250px;
-    height: 250px;
+/* When dark theme is active, invert the theme-toggle svg */
+:root[data-theme="dark"] #theme-toggle {
+  filter: invert();
 }

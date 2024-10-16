@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +16,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="yapona.gif" alt="Lona yapping" id="yapona">
-    <h2>I am not yet ready, come back later!</h2>
-    <a target="_blank" rel="noopener noreferrer" href="https://discord.com/users/489786407020134400">Discord</a>
+    <header>
+        <button class="svg-button">
+            <img id="theme-toggle" src="darktheme.svg" alt="Dark mode">
+        </button>
+        <hr>
+    </header>
+    <main>
+        <h1>Main filler</h1>
+        <p>yap yap yap yap</p>
+    </main>
+    <footer>
+        <hr>
+        <section id="contact">
+            <a class="social-link" target="_blank" rel="noopener noreferrer" href="https://discord.com/users/489786407020134400">Discord</a>
+            <a class="social-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/CatThatGoesPop">Twitter</a>
+            <a class="social-link" target="_blank" rel="noopener noreferrer" href="https://github.com/Leonaaaaaaa">GitHub</a>
+            <a class="social-link" target="_blank" rel="noopener noreferrer" href="https://lonaaaa.bsky.social">Blue Sky</a>
+            <a class="social-link" target="_blank" rel="noopener noreferrer" href="https://ko-fi.com/lonalayonalonana">Ko-fi</a>
+        </section>
+        <section id="88x31s">
+            
+        </section>
+    </footer>
+
+    <!-- Theme toggling -->
+     <!-- dark & light -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        const preference = window.matchMedia('(prefers-color-scheme: dark)').matches;
+       
+        document.addEventListener("DOMContentLoaded", () => {
+            html.setAttribute('data-theme', preference ? 'dark' : 'light');
+        })
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+        });
+    </script>
 </body>
 </html>

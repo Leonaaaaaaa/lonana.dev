@@ -1,83 +1,171 @@
-:root[data-theme="light"] {
-  --text: #090b10;
-  --background: #f5f6fa;
-  --primary: #6d7cab;
-  --secondary: #c79ebf;
-  --accent: #ba8797;
-}
-:root[data-theme="dark"] {
-  --text: #eff1f6;
-  --background: #05060a;
-  --primary: #546292;
-  --secondary: #613859;
-  --accent: #784555;
-}
-
 html {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--text);
-  background-color: var(--background);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #3f2235;
+    background-image: url(images/oneshot.png);
+    background-size: cover;
+    color: #d8d8d8;
 }
 
 body {
-  min-height: 100vh;
-  width: 50%;
-  margin: 0 auto;
+    min-height: 100vh;
+    width: 50%;
+    margin: 0 auto;
 }
-header, main, footer { 
-  width: 100%; 
-  margin: 10px 0px;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--primary);
-}
+
 main {
+    background-color: #222022cc;
+    border-radius: 3px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 3px solid #d74e60;
+    border-right: 3px solid #d74e60;
+    border-top: 2px solid #5f5a5f77;
+    border-bottom: 2px solid #5f5a5f77;
 
-}
-footer {
-  
-}
+    backdrop-filter: blur(10px);
+    
+    min-height: 50vh;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: #d74e604d 0px 20px 30px -10px;
+    width: 100%;
+    max-width: 1200px;
 
-.svg-button {
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-  padding: 15px;
-  cursor: pointer;
-
-  transition: all 1s;
-}
-
-/* When dark theme is active, invert the theme-toggle svg */
-:root[data-theme="dark"] #theme-toggle {
-  filter: invert();
-}
-
-#yapona {
-  height: 100px;
-  width: 100px;
+    transition: height 0.5s ease;
 }
 
-.social-link {
-  display: inline-block;
-  background-color: var(--primary);
-  color: #eff1f6;
-  padding: 5px 10px;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+.header-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-.social-link:hover {
-  background-color: var(--secondary);
-  transform: translateY(-2px);
+.title-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 20%;
+    padding: 5px;
+    border-bottom-right-radius: 50px;
+    border-bottom: 3px solid #df5065;
 }
 
-.social-link:active {
-  transform: translateY(1px);
-  box-shadow: #f16578 0px 5px 10px -3px;
+h1 {
+    margin: 1px;
+    font-size: 2em;
+}
+
+.small-text {
+    margin: 1px;
+    font-size: 0.9em;
+}
+
+#content {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.right {
+    grid-column: 2;
+}
+
+.left div, .right div {
+    margin-bottom: 20px;
 }
 
 
+.link-li {
+    list-style-type: none;
+}
+
+.contact-link {
+    display: inline-block;
+    background-color: #222022cc;
+    color: white;
+    text-align: center;
+    height: 15px;
+    min-width: 100px;
+    padding: 10px 20px;
+    margin: 5px;
+    
+    cursor: pointer;
+    text-decoration: none;
+    
+    border-radius: 10px;
+    border-left: 3px solid #d74e60;
+    border-right: 3px solid #d74e60;
+    border-top: 2px solid #5f5a5f77;
+    border-bottom: 2px solid #5f5a5f77;
+    
+    box-shadow: 0 4px 6px #0000001a;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    user-select: none;
+    
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.contact-link:hover {
+    background-color: #d74e60;
+    transform: translateY(-3px);
+}
+
+.contact-link:active {
+    transform: translateY(2px);
+    box-shadow: 0 8px 12px #00000075;
+}
+
+a {
+    color: #d74e60;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    body {
+        width: 95%;
+    }
+    
+    .home {
+        grid-template-columns: 1fr;
+    }
+    
+    .title-container {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .small-text {
+        font-size: 0.8em;
+    }
+    
+    .contact-link {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    main {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+}

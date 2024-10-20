@@ -12,7 +12,7 @@ body {
     margin: 0 auto;
 }
 
-main {
+main, footer {
     background-color: #222022cc;
     border-radius: 3px;
     border-top-left-radius: 20px;
@@ -24,7 +24,7 @@ main {
 
     backdrop-filter: blur(10px);
     
-    min-height: 50vh;
+    /* min-height: 50vh; */
     padding: 1rem;
     margin: 1rem;
     box-shadow: #d74e604d 0px 20px 30px -10px;
@@ -33,6 +33,23 @@ main {
 
     transition: height 0.5s ease;
 }
+
+.btn88x31-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn88x31 {
+    transition: all 0.3s ease;
+    margin-left: 5px;
+}
+.btn88x31:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+.btn88x31:active {
+    transform: translateY(3px) scale(.95);
+}
+
 
 .header-container {
     display: flex;

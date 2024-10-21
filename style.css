@@ -36,6 +36,7 @@ main, footer {
 .btn88x31-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .btn88x31 {

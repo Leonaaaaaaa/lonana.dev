@@ -108,41 +108,13 @@ h1 {
     list-style-type: none;
 }
 
-.contact-link {
-    display: inline-block;
-    background-color: #222022cc;
-    color: white;
-    text-align: center;
-    height: 15px;
-    min-width: 100px;
-    padding: 10px 20px;
-    margin: 5px;
-    
-    cursor: pointer;
-    text-decoration: none;
-    
-    border-radius: 10px;
-    border-left: 3px solid #d74e60;
-    border-right: 3px solid #d74e60;
-    border-top: 2px solid #5f5a5f77;
-    border-bottom: 2px solid #5f5a5f77;
-    
-    box-shadow: 0 4px 6px #0000001a;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    user-select: none;
-    
-    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+.link-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.contact-link:hover {
-    background-color: #d74e60;
-    transform: translateY(-3px);
-}
-
-.contact-link:active {
-    transform: translateY(2px);
-    box-shadow: 0 8px 12px #00000075;
+.link-container a {
+    margin-bottom: 5px;
 }
 
 a {

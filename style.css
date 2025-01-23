@@ -63,6 +63,7 @@ main, footer {
     align-items: center;
     min-width: 25%;
     padding: 5px;
+    padding-right: 3%;
     border-bottom-right-radius: 50px;
     border-bottom: 3px solid #df5065;
 }
@@ -83,12 +84,6 @@ h1 {
     grid-template-columns: 50% 50%;
     gap: 20px;
 }
-
-#yapona {
-  width: 50px;
-  height: 50px;
-}
-
 
 
 .left {
@@ -121,28 +116,7 @@ a {
     color: #d74e60;
 }
 
-/* Tablets */
-@media (max-width: 768px) {
-    body {
-        width: 95%;
-    }
-    
-    .home {
-        grid-template-columns: 1fr;
-    }
-    
-    .title-container {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    h1 {
-        font-size: 1.8em;
-    }
-}
-
-/* Phones */
-@media (max-width: 480px) {
+@media (max-width: 980px) {
     body {
         width: 100%;
     }
@@ -154,14 +128,9 @@ a {
     .small-text {
         font-size: 0.8em;
     }
-    
-    .contact-link {
-        padding: 8px 15px;
-        font-size: 12px;
-    }
 
     main {
-        padding: 0.5rem;
+        padding: 1rem;
         margin: 0.5rem;
     }
 }

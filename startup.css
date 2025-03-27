@@ -1,0 +1,10 @@
+body {
+    width: auto;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+body p {
+    white-space: pre;
+    line-height: 0;
+}

@@ -1,11 +1,26 @@
+:root {
+    --red:#AE3107;
+    --blue: #208DB8;
+    --white: #FFFFFFEF;
+}
+
+.red {
+    color: var(--red);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+
 @font-face {
     font-family: 'PerfectDOSVGA';
-    src: url('fonts/Perfect DOS VGA 437.ttf') format('truetype');
+    src: url('fonts/pokemon-dp-pro.ttf') format('truetype');
 }
 
 html {
     font-family: 'PerfectDOSVGA', monospace;
-    background: #1a191d;
+    background: #000000;
     color: white;
 }
 

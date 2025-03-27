@@ -1,6 +1,6 @@
-setInterval(() => {
-    location.reload();
-}, 2000);
+// setInterval(() => {
+//     location.reload();
+// }, 2000);
 function set_age(birthYear = 2007, birthMonth = 2, birthDay = 24) {
     const today = new Date();
     const currentYear = today.getFullYear();

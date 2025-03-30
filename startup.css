@@ -1,10 +1,19 @@
+@import 'style.css';
+
 body {
-    width: auto;
     margin-left: 30px;
     font-size: 30px;
 }
 
 body p {
-    white-space: pre;
     line-height: 0;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

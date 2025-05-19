@@ -24,6 +24,14 @@ async function BootSequence() {
 			element.style.display = "";
 		}
 	}
+
+	await sleep(1000)
+	Object.values(IDs).forEach((id) => {
+		const element = document.getElementById(id[0]);
+		if (element) element.style.display = "none";
+	});
+	await sleep(500)
+	location.href = "BIOS.html"
 }
 
 BootSequence();

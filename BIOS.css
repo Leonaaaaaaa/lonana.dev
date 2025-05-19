@@ -1,0 +1,21 @@
+@import 'style.css';
+
+.window {
+    border: 2px solid var(--red);
+    min-width: 200px;
+    width: fit-content;
+    font-size: 2em;
+    position: static;
+}
+
+.tool-bar {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 5px;
+    user-select: none;
+}
+
+.content {
+    line-height: 0px;
+    padding: 0px 15px 0px 15px;
+}

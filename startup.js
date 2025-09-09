@@ -31,7 +31,7 @@ async function BootSequence() {
 		if (element) element.style.display = "none";
 	});
 	await sleep(500)
-	location.href = "BIOS.html"
+	location.href = "BIOS.php"
 }
 
 BootSequence();

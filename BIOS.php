@@ -1,3 +1,12 @@
+<?php
+
+$born = new DateTime('2007-02-24');
+$now = new DateTime();
+
+$age = $now->diff($born)->y;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,11 +46,11 @@
             </div>
         </section>
 
-        <section id="about-me" hidden>
+        <section id="about-me">
             <div>
                 <h2>About me</h2>
                 <p>Hello! I tend to dabble in anything nerdy or tech-related and I plan for this website to be a source for all my projects</p>
-                <p>On the internet I go by Lona, I am an <span id="age">2/24/2007</span> year old student who likesplaying with programmable doohickeys such as computers</p>
+                <p>On the internet I go by Lona, I am an <?php echo $age; ?> year old student who likesplaying with programmable doohickeys such as computers</p>
                 <p>Also if you feel like it, sign my <a rel="noopener noreferrer" href="https://lona.atabook.org/">guestbook</a>!</p>
             </div>
             <div>

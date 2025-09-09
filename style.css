@@ -4,6 +4,7 @@
     --red:#ff490b80;
     --blue: #00bfff80;
     --white: #ffffff85;
+    --grey: #80808080;
 }
 
 @font-face {
@@ -38,6 +39,7 @@ body {
 
 a {
     color: var(--blue);
+    text-shadow: 0px 1.9px #23c4fa80;
     text-decoration: none;
 }
 

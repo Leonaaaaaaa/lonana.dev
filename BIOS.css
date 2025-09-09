@@ -1,21 +1,56 @@
 @import 'style.css';
 
-.window {
-    border: 2px solid var(--red);
-    min-width: 200px;
-    width: fit-content;
-    font-size: 2em;
-    position: static;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.tool-bar {
-    background-color: var(--red);
-    color: var(--white);
-    padding: 5px;
-    user-select: none;
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
 }
 
-.content {
-    line-height: 0px;
-    padding: 0px 15px 0px 15px;
+header h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    margin-left: auto;
+}
+
+header nav button {
+    background: none;
+    border: none;
+    color: var(--grey);
+    text-shadow: 0px 2px #ffffffaa;
+    font-family: 'Pokemon DP Pro';
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 1.5rem;
+
+    border-top: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
+}
+
+header nav button.red {
+    border-top: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+}
+
+header nav button:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+.warning {
+    line-height: 1pt;
 }

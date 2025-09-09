@@ -45,15 +45,14 @@ $age = $now->diff($born)->y;
                 <p>Manipulator: <span class="red">FEHLEN</span></p>
             </div>
         </section>
-
-        <section id="about-me">
+        <section id="about-me" hidden>
             <div>
                 <h2>About me</h2>
                 <p>Hello! I tend to dabble in anything nerdy or tech-related and I plan for this website to be a source for all my projects</p>
-                <p>On the internet I go by Lona, I am an <?php echo $age; ?> year old student who likesplaying with programmable doohickeys such as computers</p>
+                <p>On the internet I go by Lona, I am an <?php echo $age; ?> year old student who likes playing with programmable doohickeys :D</p>
                 <p>Also if you feel like it, sign my <a rel="noopener noreferrer" href="https://lona.atabook.org/">guestbook</a>!</p>
             </div>
-            <div>
+            <div id="interests">
                 <h2>My interests</h2>
                 <ul>
                     <li>Programming</li>

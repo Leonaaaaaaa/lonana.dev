@@ -26,18 +26,18 @@ $age = $now->diff($born)->y;
 <body>
     <header>
         <h1>Generation 5 KOMMANDO-LEITEINHEIT BIORESONANZTECHNIK REPLIKA</h1>
-        <nav>
-            <button class="red">Hauptmenü</button>
-            <button>About Me</button>
-            <button>Projects</button>
-            <button>Games</button>
-            <button>Contact</button>
-            <button>88x31</button>
+        <nav id="page-nav">
+            <button onclick="showPage(0)"  class="red">Hauptmenü</button>
+            <button onclick="showPage(1)" >About Me</button>
+            <button onclick="showPage(2)" >Projects</button>
+            <button onclick="showPage(3)" >Games</button>
+            <button onclick="showPage(4)" >Contact</button>
+            <button onclick="showPage(5)" >88x31</button>
         </nav>
     </header>
 
     <main>
-        <section id="Hauptmenu">
+        <section id="hauptmenu">
             <div class="warning">
                 <h1 class="red">WARNUNG!!!</h1>
                 <p>Folgende Komponenten fehlen</p>
@@ -45,7 +45,7 @@ $age = $now->diff($born)->y;
                 <p>Manipulator: <span class="red">FEHLEN</span></p>
             </div>
         </section>
-        <section id="about-me" hidden>
+        <section hidden id="aboutme">
             <div>
                 <h2>About me</h2>
                 <p>Hello! I tend to dabble in anything nerdy or tech-related and I plan for this website to be a source for all my projects</p>
@@ -61,15 +61,18 @@ $age = $now->diff($born)->y;
                     <li>Astronomy</li>
                     <li>Virtual reality</li>
                     <li>Cats</li>
+                    <li>Gardening n' critters</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Special:Random">Wikipedia</a> doomscrolling</li>
                     <li>Whatever else I suddenly take an unusual amount of interest in</li>
                 </ul>
             </div>
         </section>
-        <section id="projects"></section>
-        <section id="games"></section>
-        <section id="contact"></section>
-        <section id="badge"></section>
+        <section hidden id="projects">
+            
+        </section>
+        <section hidden id="games"></section>
+        <section hidden id="contact"></section>
+        <section hidden id="badges"></section>
     </main>
 </body>
 <script src="script.js"></script>

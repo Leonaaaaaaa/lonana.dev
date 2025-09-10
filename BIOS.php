@@ -25,7 +25,7 @@ $age = $now->diff($born)->y;
 
 <body>
     <header>
-        <h1>Generation 5 KOMMANDO-LEITEINHEIT BIORESONANZTECHNIK REPLIKA</h1>
+        <h1>Generation 6 KOMMANDO-LEITEINHEIT BIORESONANZTECHNIK REPLIKA</h1>
         <nav id="page-nav">
             <button onclick="showPage(0)"  class="red">Hauptmenü</button>
             <button onclick="showPage(1)" >About Me</button>

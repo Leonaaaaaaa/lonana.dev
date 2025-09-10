@@ -14,7 +14,7 @@
 
       <div id="replika-os">
         <p>K<span class="red">⁰</span> KERNEL 5.12F REPLIKA-BETRIEBSYSTEM</p>
-        <p>Generation 5 KOMMANDO-LEITEINHEIT BIORESONANZTECHNIK REPLIKA</p>
+        <p>Generation 6 KOMMANDO-LEITEINHEIT BIORESONANZTECHNIK REPLIKA</p>
         <p>Chipset-Modell: <span class="red">｢Koriburi-4｣</span></p>
       </div>
 

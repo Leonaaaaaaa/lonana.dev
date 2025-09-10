@@ -39,8 +39,7 @@ $age = $now->diff($born)->y;
     <main>
         <section id="hauptmenu">
             <div class="warning">
-                <h1 class="red">WARNUNG!!!</h1>
-                <p>Folgende Komponenten fehlen</p>
+                <h1 class="red">ACHTUNG!!</h1>
                 <p>Lokomotor: <span class="red">FEHLEN</span></p>
                 <p>Manipulator: <span class="red">FEHLEN</span></p>
             </div>
@@ -70,7 +69,13 @@ $age = $now->diff($born)->y;
         <section hidden id="projects">
             
         </section>
-        <section hidden id="games"></section>
+        <section hidden id="games">
+            <div class="game">
+                <p class="title">Googordle</p>
+                <p class="desc">A game where you solve 10^100 wordles at the same time</p>
+                <a href="https://leonaaaaaaa.github.io/googordle/">Play here!</a>
+            </div>
+        </section>
         <section hidden id="contact"></section>
         <section hidden id="badges"></section>
     </main>

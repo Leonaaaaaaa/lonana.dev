@@ -2,6 +2,7 @@ const pages = [
     "hauptmenu",
     "aboutme",
     "projects",
+    "games",
     "contact",
     "badges",
 ];

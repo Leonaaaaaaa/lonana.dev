@@ -27,21 +27,37 @@ $age = $now->diff($born)->y;
     <header>
         <h1>Generation 6 KOMMANDO-LEITEINHEIT BIORESONANZTECHNIK REPLIKA</h1>
         <nav id="page-nav">
-            <button onclick="showPage(0)"  class="red">Hauptmenü</button>
-            <button onclick="showPage(1)" >About Me</button>
-            <button onclick="showPage(2)" >Projects</button>
-            <button onclick="showPage(3)" >Games</button>
-            <button onclick="showPage(4)" >Contact</button>
-            <button onclick="showPage(5)" >88x31</button>
+            <button onclick="showPage(0)" class="red">HAUPTMENÜ</button>
+            <button onclick="showPage(1)">ABOUT ME</button>
+            <button onclick="showPage(2)">PROJECTS</button>
+            <button onclick="showPage(3)">GAMES</button>
+            <button onclick="showPage(4)">CONTACT</button>
+            <button onclick="showPage(5)">BADGES</button>
         </nav>
     </header>
 
     <main>
         <section id="hauptmenu">
-            <div class="warning">
-                <h1 class="red">ACHTUNG!!</h1>
-                <p>Lokomotor: <span class="red">FEHLEN</span></p>
-                <p>Manipulator: <span class="red">FEHLEN</span></p>
+            <div class="container">
+                <h2>STATUS</h2>
+                <div id="replika-os">
+                    <h3>Technischeinformationen</h3>
+                    <p>K<span class="red">⁰</span> KERNEL 5.12F REPLIKA-BETRIEBSYSTEM</p>
+                    <p>Generation 6 KOMMANDO-LEITEINHEIT BIORESONANZTECHNIK REPLIKA</p>
+                    <p>Chipset-Modell: <span class="red">｢Koriburi-4｣</span></p>
+                </div>
+                <br>
+                <div id="replika-info">
+                    <h3>Systeminformationen</h3>
+                    <p>Gestell: KLBR (KOMMANDO)</p>
+                    <p>Manipulator: <span class="red">FEHLEN</span></p>
+                    <p>Lokomotor: <span class="red">FEHLEN</span></p>
+                    <p>Persona: KOLIBRI</p>
+                    <br>
+                    <p>Externe Steuerung: <span class="blue">Aktiv</span></p>
+                    <p>Netzwerkverbindung: <span class="blue">Aktiv</span></p>
+                    <p>BIOS Version: 130-24-07-RPK-224-KLBR-SYS-AN</p>
+                </div>
             </div>
         </section>
         <section hidden id="aboutme">

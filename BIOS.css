@@ -55,3 +55,14 @@ main {
 #interests {
     line-height: normal;
 }
+
+.container {
+    width: fit-content;
+    border-bottom: var(--grey) 2px solid;
+}
+
+.container h2 {
+    background-color: var(--red);
+    line-height: normal;
+    margin: 0;
+}

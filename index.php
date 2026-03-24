@@ -47,6 +47,8 @@ $age = $now->diff($born)->y;
         <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://user.xmission.com/~emailbox/catstuff.htm"><img style="height: 31px; width: 88px;" title="I <3 cats" src="images/88x31s/wasted.gif"></a>
         <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://neocities.org/"><img title="Get your own website!" src="images/88x31s/neocities.gif"></a>
         <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://maia.crimew.gay/"><img src="https://maia.crimew.gay/badges/maia.crimew.gay.png" title="maia arson crimew"></a>
+        <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://w3schools.com/"><img src="images/88x31s/w3schools88x31.gif" title="W3Schools is kinda awesome at times"></a>
+
     </div>
 </body>
 </html>

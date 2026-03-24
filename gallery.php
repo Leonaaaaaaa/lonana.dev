@@ -1,5 +1,7 @@
 <?php
 
+// TODO: find a solution to the slow loading of the images
+
 $imagepath = dirname(__FILE__) . '/images/gallery';
 $jpgFiles = glob($imagepath . '/*.{jpg,jpeg,JPG,JPEG}', GLOB_BRACE);
 $jpgFilenames = array_map('basename', $jpgFiles);

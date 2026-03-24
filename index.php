@@ -25,10 +25,28 @@ $age = $now->diff($born)->y;
     </div>
     <hr>
     <h2>hi im Lona <span class="small-text">she/it</span></h2>
-    <p>hii, I like doing silly things like playing with computers n stuff! C: </p>
-    <p>I am <?php echo $age ?> years old, like embedded programming, and astronomy</p>
+    <div>
+        <p>hii, I like doing silly things like playing with computers n stuff! C: </p>
+        <p>I am <?php echo $age ?> years old, like embedded programming, astronomy, photography, and a whole lot more :D</p>
+        <a href="gallery.php">See my photos here!</a>
+    </div>
     <hr>
     <h2>Projects</h2>
-    <a href="https://leonaaaaaaa.github.io/googordle/">Googordle, A  wordle game where you solve 10,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000 wordles at the same time! </a>
+    <div class="projects-container">
+        <a href="https://leonaaaaaaa.github.io/googordle/">Googordle, A  wordle game where you solve 10,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000 wordles at the same time! </a>
+    </div>
+    <hr> 
+    <h2>I LOVE THE INTERNET AND ITS INHABITANTS <3</h2>
+    <div class="btn88x31-container">
+        <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://badge.les.bi"><img title="trans bi" src="https://badge.les.bi/88x31/trans/bi/half/outset.png"></a>
+        <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/"><img title="Wikipedia" src="images/88x31s/wikipedia.gif"></a>
+        <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://archive.org/"><img title="Internet Archive" src="images/88x31s/internetarchive.png"></a>
+        <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://nekoweb.org/"><img title="Get your own website!" src="https://nekoweb.org/assets/buttons/button6.gif"></a> <!-- button by s1nez.nekoweb.org -->
+        <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://yesterweb.org/no-to-web3/"><img title="Fuck web3" src="images/88x31s/saynotoweb3.gif"></a>
+        <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://dimden.dev/"><img title="dimden.dev" src="https://dimden.dev/services/images/88x31.gif"></a>
+        <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://user.xmission.com/~emailbox/catstuff.htm"><img style="height: 31px; width: 88px;" title="I <3 cats" src="images/88x31s/wasted.gif"></a>
+        <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://neocities.org/"><img title="Get your own website!" src="images/88x31s/neocities.gif"></a>
+        <a class="btn88x31" target="_blank" rel="noopener noreferrer" href="https://maia.crimew.gay/"><img src="https://maia.crimew.gay/badges/maia.crimew.gay.png" title="maia arson crimew"></a>
+    </div>
 </body>
 </html>

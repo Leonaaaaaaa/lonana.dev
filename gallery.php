@@ -1,7 +1,5 @@
 <?php
 
-// TODO: find a solution to the slow loading of the images
-
 $imagepath = dirname(__FILE__) . '/images/gallery';
 $jpgFiles = glob($imagepath . '/*.{jpg,jpeg,JPG,JPEG}', GLOB_BRACE);
 $jpgFilenames = array_map('basename', $jpgFiles);
@@ -23,7 +21,7 @@ $jpgFilenames = array_map('basename', $jpgFiles);
     <div id="gallery">
         <?php 
             foreach ($jpgFilenames as $filename) {
-                echo "<img class='gallery-image pointy' src='images/gallery/$filename' alt='$filename'>";
+                echo "<img loading='lazy' class='gallery-image pointy' src='images/gallery/$filename' alt='$filename'>";
             }
         ?>
     </div>

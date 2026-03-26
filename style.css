@@ -115,3 +115,9 @@ header {
     height: 90%;
     max-height: 700px;
 }
+
+#socials {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}

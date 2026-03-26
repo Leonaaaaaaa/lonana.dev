@@ -29,11 +29,19 @@ $age = $now->diff($born)->y;
         <p>hii, I like doing silly things like playing with computers n stuff! C: </p>
         <p>I am <?php echo $age ?> years old, like embedded programming, astronomy, photography, and a whole lot more :D</p>
         <a href="gallery.php">See my photos here!</a>
+        <p class="small-text"> Please bare with me as I figure out how I actually want to design my website</p>
     </div>
     <hr>
     <h2>Projects</h2>
     <div class="projects-container">
         <a href="https://leonaaaaaaa.github.io/googordle/">Googordle, A  wordle game where you solve 10,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000 wordles at the same time! </a>
+    </div>
+    <hr>
+    <h2>Talk to me! :D</h2>
+    <div id="socials">
+         <a href="https://bsky.app/profile/lonana.dev">BlueSky</a>
+         <a target="_blank" rel="noopener noreferrer" href="https://discord.com/users/489786407020134400">Discord</a>
+         <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leonaaaaaaa">GitHub</a>
     </div>
     <hr> 
     <h2>I LOVE THE INTERNET AND ITS INHABITANTS <3</h2>
